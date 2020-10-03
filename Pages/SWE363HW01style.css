@@ -57,3 +57,13 @@ body {
 .white {
   color: white;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #282d36;
+  color: white;
+  text-align: center;
+}
