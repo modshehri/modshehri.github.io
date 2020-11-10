@@ -1,0 +1,84 @@
+.logo{
+    margin-top: 60px;
+    margin-left: 60px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 54px;
+    text-align: right;
+}
+
+.logo a{
+    color: black;
+    text-decoration: none;
+}
+
+#supportBtn{
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+#welcoming{
+    font-weight: lighter;
+    margin-left: 75px;
+    margin-top: 20px;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 54px;
+}
+
+#docCatagories{
+    position: relative;
+    text-align: center;
+    border-right: 1px solid gray;
+    height: 500px;
+}
+
+#docCatagories button{
+    border-radius: 8px;
+    border: none;
+    display: block;
+    margin: 10px;
+}
+
+#selected {
+    background: linear-gradient(88.86deg, #3A00A9 0%, #6052EC 100%);
+    color: white;
+    width: 70%;
+    float: right;
+}
+
+.unselected{
+    background: #F2F2F2;
+    width: 70%;
+    float: right;
+}
+
+#profile-card{
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    width: 70%;
+    margin: 10px;
+}
+
+#Logout{  
+    position: absolute;
+    left: 30%;
+    width: 30%;  
+    background: #FF5B5B;
+    border-radius: 8px;
+    color: white;
+}
+
+#new-document{
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    width: 9%;
+    border: none;
+}
+
+
+

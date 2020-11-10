@@ -1,0 +1,54 @@
+body {
+    background: linear-gradient(225deg, rgba(96,82,236,1) 35%, rgba(58,0,169,1) 100%) fixed;
+}
+
+.logo {
+    color: white;
+    font-size: 40px;
+    margin: 0 0;
+    font-weight: bold;
+    float: left;
+    margin-left: 60px;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+
+button.navigation {
+    margin-left: 54px;
+    margin-top: 7px;
+}
+
+button.primary {
+    margin-right: 60px;
+}
+
+#top-nav-bar {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#promotion-text {
+    color: white;
+    font-size: 56px;
+}
+
+#join-free-text {
+    color: white;
+    font-size: 24px;
+}
+
+#promotion-table {
+    width: 100%;
+}
+
+#promotional-left-column {
+    padding-left: 8%;
+}
+
+#promotional-right-column {
+    padding-right: 10%;
+}

@@ -1,79 +1,55 @@
-<!-- This is the home page for my project index.html -->
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>HW01 201759670</title>
-    <link rel="stylesheet" href="https://modshehri.github.io./Pages/SWE363HW01style.css">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="description" content="SWE363 first HW">
-    <meta name="keywords" content="HTML, CSS">
-    <meta name="author" content="modshehri">
-  </head>
-  <body>
-    <!-- This is the page header which is common for all pages -->
-    <header class="header">
-      <div class="logo">
-        <img src="https://modshehri.github.io./Assets/kisspng-web-development-web-service-web-developer-digital-develop-5b131963c5e679.5141393515279783398106.png" alt="LOGO" style="width: 50px; height:50px">
-      </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftChart - Make UML Charts</title>
+    <link rel="stylesheet" href="primary.css">
+    <link rel="stylesheet" href="home.css">
 
-      <div class="log">
-         <a href="https://modshehri.github.io./Pages/login.html" class="white">Log IN</a>
-          /
-         <a href="https://modshehri.github.io./Pages/signup.html" class="white">Sign Up</a>
-      </div>
-      <div class="menuContiner">
-          <div class="sideMenuItem"><a href="https://modshehri.github.io/index.html" class="white">Main page</a></div>
-          <div class="mainMenuItem"><a href="https://modshehri.github.io/index.html" class="white">Main page</a></div>
-          <div class="sideMenuItem"><a href="https://modshehri.github.io/index.html" class="white">Main page</a></div>
-      </div>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+
+    <script src="firebase-configuration.js"></script>
+    <script src="index-scripts.js" defer></script>
+</head>
+<body>
+
+    <header id="top-nav-bar">
+        <p class="logo"><a href="https://modshehri.github.io./">SoftChart</a></p>
+        <button class="navigation">Support</button>
+        <button class="primary" style="float: right;" onclick="location.href='Pages/documents.html'">My Account</button>
     </header>
 
-    <!-- This is map with all it assosiations links-->
-    <img src="https://modshehri.github.io./Assets/118213164-saudi-arabia-vector-map-with-infographic-elements-pointer-marks-editable-template-with-regions-citie.jpg" usemap="#image-map" class="center" alt="Saudi Arabia Map">
+    <table id="promotion-table">
+        <tr>
+            <td id="promotional-left-column">
+                <div>
+                    <p id="promotion-text">
+                        Create UML Charts That <i>inspire</i>.
+                    </p>
+            
+                    <p id="join-free-text">
+                        Join us for <u>FREE!</u>
+                    </p>
+            
+                    <button class="primary">Join Us!</button>
+                </div>
+            </td>
 
-    <map name="image-map">
-      <area target="_blank" alt="Eastern" title="Eastern region of the kingdom" href="Pages/Eastern.html" coords="621,483,674,539,705,558,732,562,753,570,763,582,771,609,778,629,786,670,786,712,783,750,780,777,772,792,783,792,772,811,775,827,783,841,779,870,770,898,765,915,759,920,837,923,924,924,963,924,965,933,1096,893,1126,792,1108,760,1098,767,987,742,941,679,933,661,911,655,871,591,877,563,849,529,802,469,767,462,759,440,676,435,682,452,672,471,653,454" shape="poly" >
-      <area target="_blank" alt="Riyadh" title="Riyadh region: the capital" href="Pages/Riyadh.html" coords="493,699,521,707,544,732,568,757,579,798,589,823,599,857,607,891,610,916,687,926,719,928,762,921,779,848,772,818,771,792,785,710,776,665,763,603,753,575,711,563,675,542,645,514,621,559,633,603,614,616,571,634,564,657,538,659,517,651,517,680,507,694" shape="poly">
-      <area target="_blank" alt="Maddinah" title="Maddinah region" href="Pages/Maddinah.html" coords="297,658,327,652,328,640,322,604,298,575,281,540,269,527,290,517,299,521,328,521,332,536,346,549,369,555,394,555,412,577,419,599,419,619,435,625,483,616,510,636,516,652,515,680,489,701,478,715,483,728,459,743,456,756,429,757,413,742,411,727,391,736,373,714,358,718" shape="poly">
-    </map>
+            <td id="promotional-right-column">
+                <div>
+                    <img src="promotional-image.png" alt="">
+                </div>
+            </td>
+        </tr>
+    </table>
 
-    <hr>
-
-    <section class="section">
-      <img src="https://modshehri.github.io./Assets/images.jpeg" alt="pic 1" class="sectionImge">
-      <header>
-        <h2>Hi</h2>
-      </header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat mauris id leo finibus sollicitudin vitae et eros. Suspendisse finibus venenatis placerat. Sed ut dui ligula. Fusce ac diam quam. Aenean nec nisl a purus vehicula consectetur. Vivamus mattis non eros quis pretium. Aenean ut aliquam justo. Maecenas lobortis rutrum risus, in porttitor orci dignissim non. Integer pharetra tempus erat eget finibus. Morbi fermentum orci est, nec cursus massa aliquet sit amet. Mauris sollicitudin nisl ac tempor luctus. Maecenas mollis vehicula pharetra. Proin bibendum tempor libero eget pretium. Sed et ultrices augue, et finibus nunc. Vivamus vestibulum fringilla nunc sed lobortis. Vivamus congue molestie quam nec volutpat. Etiam eget magna non eros venenatis tristique. In erat sem, dictum nec elementum eget, imperdiet lacinia augue. Etiam eget fermentum lacus, quis mattis mauris. Integer ante enim, posuere eu dictum eget, viverra eget urna.</p>
-    </section>
-
-
-    <hr>
-
-    <section class="section">
-      <img src="https://modshehri.github.io./Assets/images.png" alt="pic 2" class="sectionImge">
-      <header>
-        <h2>How are you?</h2>
-      </header>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat mauris id leo finibus sollicitudin vitae et eros. Suspendisse finibus venenatis placerat. Sed ut dui ligula. Fusce ac diam quam. Aenean nec nisl a purus vehicula consectetur. Vivamus mattis non eros quis pretium. Aenean ut aliquam justo. Maecenas lobortis rutrum risus, in porttitor orci dignissim non. Integer pharetra tempus erat eget finibus. Morbi fermentum orci est, nec cursus massa aliquet sit amet. Mauris sollicitudin nisl ac tempor luctus. Maecenas mollis vehicula pharetra. Proin bibendum tempor libero eget pretium. Sed et ultrices augue, et finibus nunc. Vivamus vestibulum fringilla nunc sed lobortis. Vivamus congue molestie quam nec volutpat. Etiam eget magna non eros venenatis tristique. In erat sem, dictum nec elementum eget, imperdiet lacinia augue. Etiam eget fermentum lacus, quis mattis mauris. Integer ante enim, posuere eu dictum eget, viverra eget urna.</p>
-    </section>
-
-    <hr>
-
-    <section class="section">
-      <img src="https://modshehri.github.io./Assets/images(1).png" alt="pic 3" class="sectionImge">
-      <header>
-        <h2>Hopes you are fine!</h2>
-      </header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat mauris id leo finibus sollicitudin vitae et eros. Suspendisse finibus venenatis placerat. Sed ut dui ligula. Fusce ac diam quam. Aenean nec nisl a purus vehicula consectetur. Vivamus mattis non eros quis pretium. Aenean ut aliquam justo. Maecenas lobortis rutrum risus, in porttitor orci dignissim non. Integer pharetra tempus erat eget finibus. Morbi fermentum orci est, nec cursus massa aliquet sit amet. Mauris sollicitudin nisl ac tempor luctus. Maecenas mollis vehicula pharetra. Proin bibendum tempor libero eget pretium. Sed et ultrices augue, et finibus nunc. Vivamus vestibulum fringilla nunc sed lobortis. Vivamus congue molestie quam nec volutpat. Etiam eget magna non eros venenatis tristique. In erat sem, dictum nec elementum eget, imperdiet lacinia augue. Etiam eget fermentum lacus, quis mattis mauris. Integer ante enim, posuere eu dictum eget, viverra eget urna.</p>
-    </section>
-
-
-    <div class="footer">
-      <p><a href="https://modshehri.github.io./Pages/Validation.html" class="white">Validation Screenshoots</a></p>
-    </div>
-
-  </body>
+    <footer id="footer">
+        <a href="">About Us</a>
+    </footer>
+</body>
 </html>
