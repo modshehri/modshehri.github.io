@@ -6,26 +6,14 @@
 
     <title>SoftChart - Make UML Charts</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://modshehri.github.io./Assets/primary.css">
-    <link rel="stylesheet" href="https://modshehri.github.io./Assets/documents.css">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
-
-    <script src="https://modshehri.github.io./Assets/firebase-configuration.js"></script>
-    <script src="https://modshehri.github.io./Assets/canvas-scripts.js" defer></script>
+    <link rel="stylesheet" href="primary.css">
+    <link rel="stylesheet" href="documents.css">
 </head>
 <body>
     <div class="row" style="height: 100px;">
         <div class="col-2">
             <p class="logo">
-                <a href="https://modshehri.github.io.">SoftChart</a>
+                <a href="index.html">SoftChart</a>
             </p>
         </div>
         <div class="col-10" >
@@ -47,10 +35,12 @@
 
     <div class="row">
         <div class="col-3" id="docCatagories">
+            <input id="searchDocs" type="text" placeholder="Search document by name... 🔍">
+
             <button id="selected">
                 All documents
             </button>
-            
+
             <button class="unselected">
                 Your documents
             </button>
@@ -84,7 +74,7 @@
         </div>
 
         <div class="col-9">
-            <button id="new-document" onclick="location.href='//modshehri.github.io./Pages/canvas.html'">
+            <button id="new-document" onclick="location.href='canvas.html'">
                 <p style="font-size: 40px; margin-bottom: 0px;" >
                     +
                 </p>
