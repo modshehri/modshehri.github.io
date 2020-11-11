@@ -48,6 +48,19 @@
     float: right;
 }
 
+#searchDocs{
+    border-radius: 26px;
+    border: 1px solid #CCCCCC;
+    display: block;
+    margin: 10px;
+    margin-bottom: 20px;
+    background: #F2F2F2;
+    width: 70%;
+    float: right;
+    height: 2em;
+    text-align: center;
+}
+
 .unselected{
     background: #F2F2F2;
     width: 70%;
